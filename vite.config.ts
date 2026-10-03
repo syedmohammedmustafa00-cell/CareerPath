@@ -5,4 +5,14 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [tailwindcss(), react()],
+
+  server: {
+    host: '0.0.0.0',
+    allowedHosts: ['careerpath-mf95.onrender.com'],
+  },
+
+  preview: {
+    host: '0.0.0.0',
+    allowedHosts: ['careerpath-mf95.onrender.com'],
+  },
 })
